@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>About & Services</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <style>
+      * {
+        font-family: sans-serif;
+      }
+      .nav-link {
+        margin: 0 20px;
+        color: #fffffc;
+      }
+      .carousel img {
+        height: 500px;
+        width: 100%;
+        object-fit: cover;
+        z-index: -1;
+      }
+
+      .carousel-caption {
+        color: #fffffc;
+        z-index: 3;
+      }
+      .carousel-indicators {
+        z-index: 4;
+      }
+      body {
+        background-image: url(img/ship1..gif);
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+      .carousel .overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.3);
+      }
+      section#about,
+      #services {
+        color: #fffffc;
+        z-index: 5;
+      }
+    </style>
+  </head>
+  <body>
+    <nav
+      class="navbar navbar-expand-lg bg-body-tertiary sticky-sm-top sticky-md-top sticky-lg-top sticky-xl-top sticky-xxl-top"
+      data-bs-theme="dark"
+    >
+      <div class="container-fluid">
+        <img class="nav-logo" src="img/logo.jpg" height="50px" width="50px" />
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="./index.html#name">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./aboutservices.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./aboutservices.html#services"
+                >Services</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./logincontact.html#contact">Contact</a>
+            </li>
+          </ul>
+          <div class="nav-item">
+            <a
+              href="./logincontact.html#login"
+              class="btn btn-warning"
+              type="button"
+              >Log In</a
+            >
+          </div>
+        </div>
+      </div>
+    </nav>
+    <main>
+      <section id="about">
+        <h1 class="text-center pt-4">About</h1>
+        <div class="overlay"></div>
+        <div class="text-center mx-5 px-5 fw-bolder">
+          <p>
+            I graduated as a Bachelor of Science in Marine Engineering. I worked
+            as an engine cadet for Starlite Ferries Incoporated, as an engine
+            cadet, I was responsible for familiarizing myself with the ship's
+            operation, particularly the engine room, and learning how to operate
+            and maintenance of all the machineries. One of my daily tasks is to
+            keep watch before and after duty, as well as to read and log all of
+            the gauges and paramiters. I continue to earn more experience by
+            actively participating in targeted training sessions organized by
+            various accredited agencies, demonstrating my commitment to
+            continuous skill development and refinement.
+          </p>
+        </div>
+      </section>
+      <section id="services">
+        <h1 class="text-center pt-4">Services</h1>
+        <div class="overlay"></div>
+        <div id="carouselExampleCaptions" class="carousel slide">
+          <div class="carousel-indicators">
+            <button
+              type="button"
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide-to="0"
+              class="active"
+              aria-current="true"
+              aria-label="Slide 1"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide-to="1"
+              aria-label="Slide 2"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide-to="2"
+              aria-label="Slide 3"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide-to="3"
+              aria-label="Slide 4"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide-to="4"
+              aria-label="Slide 5"
+            ></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active position-relative">
+              <img src="img/mengine.png" class="w-100" alt="..." />
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Main Engine</h5>
+                <p>Maintenance and Operation</p>
+              </div>
+              <div class="overlay"></div>
+            </div>
+            <div class="carousel-item position-relative">
+              <img src="img/aengine.png" class="w-100" alt="..." />
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Auxiliary Engine</h5>
+                <p>Maintenance and Operation</p>
+              </div>
+              <div class="overlay"></div>
+            </div>
+            <div class="carousel-item position-relative">
+              <img src="img/ballasting.jpg" class="w-100" alt="..." />
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Ballasting</h5>
+                <p>Opeartion</p>
+              </div>
+              <div class="overlay"></div>
+            </div>
+            <div class="carousel-item position-relative">
+              <img src="img/bunkering.jpg" class="w-100" alt="..." />
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Bunkering</h5>
+                <p>Operation</p>
+              </div>
+              <div class="overlay"></div>
+            </div>
+            <div class="carousel-item position-relative">
+              <img src="img/gp.jpg" class="w-100" alt="..." />
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Gauges and Parameters</h5>
+                <p>Monitoring</p>
+              </div>
+              <div class="overlay"></div>
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </section>
+    </main>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+      integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

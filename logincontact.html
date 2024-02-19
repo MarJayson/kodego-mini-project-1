@@ -4,7 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-    <title>Home</title>
+    <title>Log In & Contact</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -19,38 +23,19 @@
         margin: 0 20px;
         color: #fffffc;
       }
-      .hero-text {
-        text-align: center;
-        color: #fffffc;
-        z-index: 6;
+      #login .card {
+        max-width: 500px;
+        margin: auto;
       }
-      .hero-img {
-        position: absolute;
-        z-index: -1;
-        top: 0;
-        left: 0;
-        width: 100%;
+      .bi-facebook,
+      .bi-envelope,
+      .bi-instagram {
+        margin: 10px;
       }
-      section#home {
-        position: relative;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 500px;
-        width: 100%;
-      }
-      .hero-img img {
-        object-fit: cover;
-        width: 100%;
-        height: 500px;
-      }
-      .overlay {
-        position: absolute;
-        top: 0%;
-        left: 0%;
-        height: 100%;
-        width: 100%;
-        background-color: rgba(0, 0, 0, 0.3);
+      body {
+        background-image: url(img/ship1..gif);
+        background-repeat: no-repeat;
+        background-size: cover;
       }
     </style>
   </head>
@@ -75,7 +60,7 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link" href="./index.html#name">Home</a>
+              <a class="nav-link" href="./index.html">Home</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="./aboutservices.html#about">About</a>
@@ -100,25 +85,62 @@
         </div>
       </div>
     </nav>
-    <main>
-      <section id="home">
-        <div class="overlay"></div>
-        <div class="hero-text">
-          <h1>Mar Jayson B. Manzano</h1>
-          <h2>Bachelor of Science in Marine Engineering</h2>
-          <div class="button">
-            <a
-              href="img/resume.pdf"
-              class="btn btn-warning mt-5 border border-2 rounded border border-black fw-bolder"
-              >DOWNLOAD CV</a
-            >
-          </div>
+    <section id="login" class="pt-4">
+      <h1 class="text-center text-white">Log In</h1>
+      <p class="text-center text-white">
+        You may leave a message here! I am looking forward to it!
+      </p>
+      <div class="card">
+        <div class="card-body bg-dark text-white">
+          <form>
+            <div class="mb-3">
+              <label for="name" class="form-label">Name</label>
+              <input type="text" class="form-control" id="name" />
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label">Email Address</label>
+              <input class="form-control" id="email" />
+            </div>
+            <div class="mb-3">
+              <label for="message" class="form-label">Message</label>
+              <textarea class="form-control" id="meassage" rows="3"></textarea>
+            </div>
+            <button class="btn btn-warning w-100 fw-bold">Send</button>
+          </form>
         </div>
-        <div class="hero-img">
-          <img src="img/me1.jpg" />
+      </div>
+    </section>
+    <section id="contact" class="pt-4">
+      <h1 class="text-center text-white">Contact</h1>
+      <p class="text-center text-white">You may also contact me here!</p>
+      <div class="icon text-center pb-5">
+        <a
+          href="https://www.facebook.com/profile.php?id=100004892955332&mibextid=ZbWKwL"
+          class="bi bi-facebook btn btn-warning"
+          type="button"
+          >Facebook</a
+        >
+        <a
+          href="manzaomj.98@gmail.com"
+          class="bi bi-envelope btn btn-warning"
+          type="button"
+          >Email</a
+        >
+        <a
+          href="http://www.instagram.com/eson_mansanas"
+          type="button"
+          class="bi bi-instagram btn btn-warning"
+          >Instagram</a
+        >
+      </div>
+    </section>
+    <footer class="p-3 bg-dark">
+      <div class="container">
+        <div class="row">
+          <p class="text-center m-0 text-white">&copy; Copyright 2024</p>
         </div>
-      </section>
-    </main>
+      </div>
+    </footer>
 
     <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
