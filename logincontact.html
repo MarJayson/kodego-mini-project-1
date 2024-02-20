@@ -33,9 +33,23 @@
         margin: 10px;
       }
       body {
-        background-image: url(img/ship1..gif);
+        background-image: url(img/ship1.gif);
         background-repeat: no-repeat;
         background-size: cover;
+        position: relative;
+      }
+      .overlay {
+        position: absolute;
+        top: 0%;
+        left: 0%;
+        height: 100%;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.3);
+        z-index: -1;
+      }
+
+      section #contact {
+        z-index: 5;
       }
     </style>
   </head>
@@ -45,7 +59,7 @@
       data-bs-theme="dark"
     >
       <div class="container-fluid">
-        <img class="nav-logo" src="img/logo.jpg" height="50px" width="50px" />
+        <img class="nav-logo" src="img/logo.png" height="50px" width="50px" />
         <button
           class="navbar-toggler"
           type="button"
@@ -86,6 +100,7 @@
       </div>
     </nav>
     <section id="login" class="pt-4">
+      <div class="overlay"></div>
       <h1 class="text-center text-white">Log In</h1>
       <p class="text-center text-white">
         You may leave a message here! I am looking forward to it!
@@ -109,30 +124,31 @@
           </form>
         </div>
       </div>
-    </section>
-    <section id="contact" class="pt-4">
-      <h1 class="text-center text-white">Contact</h1>
-      <p class="text-center text-white">You may also contact me here!</p>
-      <div class="icon text-center pb-5">
-        <a
-          href="https://www.facebook.com/profile.php?id=100004892955332&mibextid=ZbWKwL"
-          class="bi bi-facebook btn btn-warning"
-          type="button"
-          >Facebook</a
-        >
-        <a
-          href="manzaomj.98@gmail.com"
-          class="bi bi-envelope btn btn-warning"
-          type="button"
-          >Email</a
-        >
-        <a
-          href="http://www.instagram.com/eson_mansanas"
-          type="button"
-          class="bi bi-instagram btn btn-warning"
-          >Instagram</a
-        >
-      </div>
+      <section id="contact" class="pt-4">
+        <div class="overlay"></div>
+        <h1 class="text-center text-white">Contact</h1>
+        <p class="text-center text-white">You may also contact me here!</p>
+        <div class="icon text-center pb-5">
+          <a
+            href="https://www.facebook.com/profile.php?id=100004892955332&mibextid=ZbWKwL"
+            class="bi bi-facebook btn btn-warning"
+            type="button"
+            >Facebook</a
+          >
+          <a
+            href="manzaomj.98@gmail.com"
+            class="bi bi-envelope btn btn-warning"
+            type="button"
+            >Email</a
+          >
+          <a
+            href="http://www.instagram.com/eson_mansanas"
+            type="button"
+            class="bi bi-instagram btn btn-warning"
+            >Instagram</a
+          >
+        </div>
+      </section>
     </section>
     <footer class="p-3 bg-dark">
       <div class="container">
