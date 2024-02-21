@@ -30,19 +30,20 @@
         top: 0;
         left: 0;
         width: 100%;
+        height: 100%;
       }
       section#home {
         position: relative;
         display: flex;
         justify-content: center;
         align-items: center;
-        height: 500px;
         width: 100%;
+        height: 100%;
       }
       .hero-img img {
         object-fit: cover;
         width: 100%;
-        height: 500px;
+        height: 100%;
       }
       .overlay {
         position: absolute;
@@ -52,8 +53,11 @@
         width: 100%;
         background-color: rgba(0, 0, 0, 0.3);
       }
-      footer {
-        background-color: rgb(37, 49, 61);
+      body {
+        height: 100vh;
+      }
+      main {
+        height: 100%;
       }
     </style>
   </head>
@@ -92,14 +96,6 @@
               <a class="nav-link" href="./logincontact.html#contact">Contact</a>
             </li>
           </ul>
-          <div class="nav-item">
-            <a
-              href="./logincontact.html#login"
-              class="btn btn-warning"
-              type="button"
-              >Log In</a
-            >
-          </div>
         </div>
       </div>
     </nav>
@@ -122,8 +118,12 @@
         </div>
       </section>
     </main>
-    <footer class="p-1">
-      <div class="container"></div>
+    <footer class="p-2 bg-dark">
+      <div class="container">
+        <div class="row">
+          <p class="text-center m-0 text-white">&copy; Copyright 2024</p>
+        </div>
+      </div>
     </footer>
 
     <script
